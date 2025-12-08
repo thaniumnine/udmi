@@ -56,7 +56,7 @@
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "pattern": "^[a-z][_a-z0-9]+$"
+        "pattern": "^[a-z][_a-zA-Z0-9]+$"
       },
       "examples": [["lighting"], ["energy", "building", "vendor_managed"]],
       "$presentation": {
@@ -246,7 +246,7 @@
             },
             "name": {
               "type": "string",
-              "pattern": "^[A-Z]{2,6}-[1-9][0-9]*$",
+              "pattern": "^[A-Z]{2,6}-[0-9][0-9]*(?:_[A-Z0-9-]+)?$",
               "$presentation": {
                 "display": "show",
                 "style": "bold"
